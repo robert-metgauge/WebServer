@@ -187,9 +187,9 @@ void MainWindow::getConfig()
     PresetMainWindow.areaTolerance          = Config.value("184_AREA_TOLERANCE").toDouble();
     PresetMainWindow.meterWeightNominal     = Config.value("185_METER_WEIGHT_NORMAL").toDouble();
     PresetMainWindow.meterWeightTolerance   = Config.value("186_METER_WEIGHT_TOLERANCE").toDouble();
-//    RebarConfigStruct->ALG_TYPE              = Config.value("19_REBAR_ALG_ENUM").toUInt();
-//    RebarConfigStruct->SkipNumber            = Config.value("20_SKIP_NUMBER").toInt();
-//    RebarConfigStruct->Mc                    = Config.value("21_MC").toInt();
+    RebarConfigStruct.ALG_TYPE              = Config.value("19_REBAR_ALG_ENUM").toUInt();
+    RebarConfigStruct.SkipNumber            = Config.value("20_SKIP_NUMBER").toInt();
+    RebarConfigStruct.Mc                    = Config.value("21_MC").toInt();
     Config.endGroup();
 
 //    Config.beginGroup("02_PRESET_DEFAULT_SETTING");
@@ -248,9 +248,9 @@ void MainWindow::getConfig()
     qDebug()<<"184_AREA_TOLERANCE"         << PresetMainWindow.areaTolerance;
     qDebug()<<"185_METER_WEIGHT_NORMAL"    << PresetMainWindow.meterWeightNominal;
     qDebug()<<"186_METER_WEIGHT_TOLERANCE" << PresetMainWindow.meterWeightTolerance;
-//    qDebug()<<"19_REBAR_ALG_ENUM"     << RebarConfigStruct->ALG_TYPE;
-//    qDebug()<<"20_SKIP_NUMBER"        << RebarConfigStruct->SkipNumber;
-//    qDebug()<<"21_MC"                 << RebarConfigStruct->Mc;
+    qDebug()<<"19_REBAR_ALG_ENUM"     << RebarConfigStruct.ALG_TYPE;
+    qDebug()<<"20_SKIP_NUMBER"        << RebarConfigStruct.SkipNumber;
+    qDebug()<<"21_MC"                 << RebarConfigStruct.Mc;
 
 //    qDebug()<<"01_SPEED"       << PresetMainWindow->speed;
 //    qDebug()<<"02_TEMPERATURE" << PresetMainWindow->steel_temperature;

@@ -47,7 +47,9 @@ private:
 //    Presets_Struct *PresetMainWindow;
     Presets_Struct PresetMainWindow;
 
-    Rebar_Config_Struct *RebarConfigStruct;
+//    Rebar_Config_Struct *RebarConfigStruct;
+    Rebar_Config_Struct RebarConfigStruct;
+
 
     void getConfig();
     /// Set in ini file
